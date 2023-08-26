@@ -1,0 +1,39 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Login</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button [routerLink]="['/login']" fill="outline" color="light">Login</ion-button>
+      <ion-button [routerLink]="['/registro']" fill="solid" color="light">Sign-in</ion-button>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Login</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content [fullscreen]="true">
+      <ion-card>
+        <img style="border-radius: 50%;" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        <ion-card-header>
+          <ion-card-title>Ingrese datos:</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-input label="Nombre Usuario" label-placement="floating" fill="outline" placeholder="Enter user"></ion-input>
+          <ion-input label="Contraseña" label-placement="floating" fill="outline" type="password"  placeholder="Enter password"></ion-input>
+          <ion-button expand="block">Iniciar Sesion</ion-button>
+          <ion-card-subtitle [routerLink]="['/registro']">Registrate</ion-card-subtitle>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-content>
+
+  </div>
+</ion-app>
