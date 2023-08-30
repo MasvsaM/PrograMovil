@@ -18,7 +18,23 @@ const routes: Routes = [
   {
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },  {
+    path: 'clases',
+    loadChildren: () => import('./clases/clases.module').then( m => m.ClasesPageModule)
   },
+  {
+    path: 'scanner-qr',
+    loadChildren: () => import('./scanner-qr/scanner-qr.module').then( m => m.ScannerQRPageModule)
+  },
+  {
+    path: 'generar-qr',
+    loadChildren: () => import('./generar-qr/generar-qr.module').then( m => m.GenerarQRPageModule)
+  },
+  {
+    path: 'salida-alumno',
+    loadChildren: () => import('./salida-alumno/salida-alumno.module').then( m => m.SalidaAlumnoPageModule)
+  },
+
 ];
 
 @NgModule({
