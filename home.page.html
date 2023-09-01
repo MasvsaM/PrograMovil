@@ -1,0 +1,61 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button [routerLink]="['/login']" fill="outline" color="light">Login</ion-button>
+      <ion-button [routerLink]="['/registro']" fill="solid" color="light">Sign-in</ion-button>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="alarm-outline" style="margin-right: 5px;"></ion-icon> Horario</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="calendar-outline" style="margin-right: 5px;"></ion-icon>Asistencia</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="checkmark-outline" style="margin-right: 5px;"></ion-icon> Notas</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="library-outline" style="margin-right: 5px;"></ion-icon>Cursos</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="id-card-outline" style="margin-right: 5px;"></ion-icon> Credencial</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="document-text-outline" style="margin-right: 5px;"></ion-icon>Certificados</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="calendar-number-outline" style="margin-right: 5px;"></ion-icon> Eventos</ion-button>
+      <ion-button href="https://oficinavirtual.tne.cl/OficinaVirtual/tramites/tramitesDisponibles.do;jsessionid=BqN0MyqHtxqQFOaeT74Wk_SX81odvsIN_AD0X-L9.p-app-eap6.junaeb.local" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="card-outline" style="margin-right: 5px;"></ion-icon>TNE</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> Finanzas</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="git-pull-request-outline" style="margin-right: 5px;"></ion-icon>Solicitudes</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> E-Mail</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="mail-outline" style="margin-right: 5px;"></ion-icon>Foros</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> Perfil</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="git-pull-request-outline" style="margin-right: 5px;"></ion-icon>Anuncios</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> Tareas</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="git-pull-request-outline" style="margin-right: 5px;"></ion-icon>Encuestas</ion-button>
+
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> Mesa</ion-button>
+      <ion-button [routerLink]="['#']" style="width: 170px; margin-left: 20px; margin-top: 20px;"fill="solid" color="light" ><ion-icon name="git-pull-request-outline" style="margin-right: 5px;"></ion-icon>Mensajes</ion-button>
+      
+      <ion-button [routerLink]="['#']" style="width: 170px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> Ajustes</ion-button>
+
+
+
+
+      <ion-button href="https://www.duoc.cl/alumnos/ava-blackboard/" style="width: 350px;margin-top: 20px; " fill="solid" color="light" > <ion-icon name="wallet-outline" style="margin-right: 5px;"></ion-icon> Abrir app Blackboard(AVA)</ion-button>
+
+    </ion-content>
+  </div>
+</ion-app>
