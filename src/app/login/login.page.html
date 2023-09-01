@@ -1,39 +1,31 @@
-<ion-app>
-  <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-toolbar color="tertiary">
-        <ion-title>Login</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content class="ion-padding">
-      <ion-button [routerLink]="['/login']" fill="outline" color="light">Login</ion-button>
-      <ion-button [routerLink]="['/registro']" fill="solid" color="light">Sign-in</ion-button>
-    </ion-content>
-  </ion-menu>
-  <div class="ion-page" id="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Login</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content [fullscreen]="true">
-      <ion-card>
-        <img style="border-radius: 50%;" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-        <ion-card-header>
-          <ion-card-title>Ingrese datos:</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <ion-input label="Nombre Usuario" label-placement="floating" fill="outline" placeholder="Enter user"></ion-input>
-          <ion-input label="Contraseña" label-placement="floating" fill="outline" type="password"  placeholder="Enter password"></ion-input>
-          <ion-button expand="block">Iniciar Sesion</ion-button>
-          <ion-card-subtitle [routerLink]="['/registro']">Registrate</ion-card-subtitle>
-        </ion-card-content>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-img src="../../assets/icon/LogoDuoc.png"></ion-img>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-card>
+      <br>
+      <br>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-input labelPlacement="floating" >
+              <div slot="label">Usuario <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input labelPlacement="floating" >
+              <div slot="label">Contraseña <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+        <br>
+        <br>
+        <ion-button expand="full" color="warning">Iniciar Sesion</ion-button>
+        <br>
+        <ion-card-subtitle [routerLink]="['/registro']">Olvidé mi contraseña</ion-card-subtitle>
+      </ion-card-content>
 
-      </ion-card>
-    </ion-content>
-
-  </div>
-</ion-app>
+    </ion-card>
+  </ion-content>
+</div>
