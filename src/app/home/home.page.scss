@@ -17,8 +17,6 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
-
   margin: 0;
 }
 
@@ -26,12 +24,6 @@
   text-decoration: none;
 }
 
-ion-menu::part(backdrop) {
-  background-color: rgba(99, 202, 209, 0.5);
-}
-
 ion-menu::part(container) {
   border-radius: 0 20px 20px 0;
-
-  box-shadow: 4px 0px 16px rgba(69, 201, 206, 0.18);
 }
