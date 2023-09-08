@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scanner-qr.page.scss'],
 })
 export class ScannerQRPage implements OnInit {
+  showImage: boolean = false;
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  EscanearQR() {
+     this.showImage = true;
+
+    }
 }

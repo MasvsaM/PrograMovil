@@ -7,17 +7,14 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <ion-card>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-
+  <div class="container">
+    <ion-card>
+      <img *ngIf="showImage" src="../../assets/icon/qrcode_experienciavivo.duoc.cl.png" />
+      <br> <br>
+      <ion-button color="warning" expand="block" id="open-loading" (click)="EscanearQR()">Escanear Codigo QR</ion-button>
+      <ion-loading class="custom-loading" trigger="open-loading" message="Loading..." [duration]="2000"></ion-loading>
+    </ion-card>
+  </div>
 </ion-content>
