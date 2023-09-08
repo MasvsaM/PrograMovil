@@ -13,8 +13,19 @@
     <ion-card>
       <img *ngIf="showImage" src="../../assets/icon/qrcode_experienciavivo.duoc.cl.png" />
       <br> <br>
-      <ion-button color="warning" expand="block" id="open-loading" (click)="EscanearQR()">Escanear Codigo QR</ion-button>
-      <ion-loading class="custom-loading" trigger="open-loading" message="Loading..." [duration]="2000"></ion-loading>
+      <div class="container">
+        <ion-button color="warning" expand="block" (click)="openActionSheet()">Escanear Código QR</ion-button>
+        <ion-action-sheet
+          *ngIf="showActionSheet"
+          header="Desea permitir que se utilice la cámara"
+
+        ></ion-action-sheet>
+      </div>
+
+      <ion-button *ngIf="showImage" expand="block"  fill="outline" color="primary" (click)="SalidaAlumno()">Confirmar Asistencia</ion-button>
     </ion-card>
   </div>
 </ion-content>
+
+
+
