@@ -1,20 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-img src="../../assets/icon/logo.jpg" ></ion-img>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-back-button ></ion-back-button>
-      </ion-buttons>
-      <ion-title size="">Generar codigo QR</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <ion-card>
+      <img *ngIf="showImage" src="../../assets/icon/qrcode_experienciavivo.duoc.cl.png" />
+      <br> <br>
+      <ion-button color="warning" expand="block" id="open-loading" (click)="GenerarQR()">Generar Codigo QR</ion-button>
+      <ion-loading class="custom-loading" trigger="open-loading" message="Loading..." [duration]="3000"></ion-loading>
+      <ion-list *ngIf="showList">
+        <ion-item *ngFor="let item of items">
+          <ion-label>{{ item }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+
+  </div>
 
 </ion-content>
-
-

@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./generar-qr.page.scss'],
 })
 export class GenerarQRPage implements OnInit {
+  showImage: boolean = false;
+  showList: boolean = false;
+  items: string[] = [];
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  GenerarQR() {
+     this.showImage = true;
+     this.items = ['Michelle Serre', 'Tito Quintero', 'Pedro Loaiza', 'Max Ramirez'];
+     this.showList = true;
+    }
 }
