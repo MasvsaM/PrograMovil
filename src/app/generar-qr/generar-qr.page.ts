@@ -18,7 +18,7 @@ export class GenerarQRPage implements OnInit {
 
   GenerarQR() {
      this.showImage = true;
-     this.items = ['Michelle Serre', 'Tito Quintero', 'Pedro Loaiza', 'Max Ramirez'];
+     this.items = ['Alumnos Presentes: ', 'Michelle Serre', 'Tito Quintero', 'Pedro Loaiza', 'Max Ramirez'];
      this.showList = true;
     }
 }
