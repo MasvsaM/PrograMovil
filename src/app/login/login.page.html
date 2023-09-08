@@ -15,14 +15,14 @@
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <ion-input labelPlacement="floating" placeholder="Usuario"></ion-input>
+          <ion-input [(ngModel)]="usuario" labelPlacement="floating" placeholder="Usuario"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input labelPlacement="floating" placeholder="Contraseña"></ion-input>
+          <ion-input [(ngModel)]="contrasena" labelPlacement="floating" placeholder="Contrasena" type="password"></ion-input>
         </ion-item>
       </ion-list>
 
-      <ion-button [routerLink]="['/home']" expand="full" color="warning">Iniciar Sesión</ion-button>
+      <ion-button (click)="iniciarSesion(usuario, contrasena)" expand="full" color="warning">Iniciar Sesión</ion-button>
 
       <ion-card-subtitle [routerLink]="['/registro']">Olvidé mi contraseña</ion-card-subtitle>
     </ion-card-content>
