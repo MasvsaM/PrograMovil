@@ -35,6 +35,19 @@ const routes: Routes = [
     path: 'salida-alumno',
     loadChildren: () => import('./salida-alumno/salida-alumno.module').then( m => m.SalidaAlumnoPageModule)
   },
+  {
+    path: 'listaprofesores',
+    loadChildren: () => import('./listaprofesores/listaprofesores.module').then( m => m.ListaprofesoresPageModule)
+  },
+  
+  {
+    path: 'construccion',
+    loadChildren: () => import('./construccion/construccion.module').then( m => m.ConstruccionPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./page404/page404.module').then( m => m.Page404PageModule)
+  },
 
 ];
 

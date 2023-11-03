@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-content>
+        <ion-list>
+          <ion-item *ngFor="let teacher of teachers">
+            <ion-label>
+              <h2>Nombre: {{ teacher.nombre }}</h2>
+              <h3>cursos impartidos: </h3>
+              <ul>
+                <li>
+                  <ion-item *ngFor="let curso of cursos">
+                    <ion-label>
+                      <h2> {{ curso.nombre }}</h2>
+                      <h2> {{ curso.seccion}}</h2>
+                    </ion-label>
+                  </ion-item>
+                </li>
+              </ul>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-content>
+  </div>
+</ion-app>
