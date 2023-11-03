@@ -64,6 +64,66 @@ profesores = [
                 "alumnos": []
             }
         ]
+    },
+     {
+        "id": 3,
+        "nombre": "Diego Cares",
+        "cursos": [
+            {
+                "id": 1,
+                "nombre": "Base de datos",
+                "codigo": "PGY0000",
+                "seccion": "013V",
+                "alumnos": [
+                    {"id": 1, "nombre": "Luis"},
+                    {"id": 2, "nombre": "María"}
+                ]
+            },
+            {
+                "id": 2,
+                "nombre": "Fisica",
+                "codigo": "PGY0000",
+                "seccion": "015V",
+                "alumnos": []
+            },
+            {
+                "id": 3,
+                "nombre": "Quimica",
+                "codigo": "PGY0000",
+                "seccion": "018V",
+                "alumnos": []
+            }
+        ]
+    },
+     {
+        "id": 4,
+        "nombre": "Orlando Sepulveda",
+        "cursos": [
+            {
+                "id": 1,
+                "nombre": "Ingles",
+                "codigo": "PGY0000",
+                "seccion": "013V",
+                "alumnos": [
+                    {"id": 1, "nombre": "Luis"},
+                    {"id": 2, "nombre": "María"}
+                ]
+            },
+            {
+                "id": 2,
+                "nombre": "Fisica",
+                "codigo": "PGY0000",
+                "seccion": "015V",
+                "alumnos": []
+            },
+            {
+                "id": 3,
+                "nombre": "Quimica",
+                "codigo": "PGY0000",
+                "seccion": "018V",
+                "alumnos": []
+            }
+        ]
     }
 ]
 
